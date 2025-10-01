@@ -1,20 +1,15 @@
 ---
-title: "Teaching experience 1"
+title: "STaRT@Rice 2025"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Workshop"
+permalink: /teaching/2025-start-rice
+venue: "Rice University"
+date: 2025-10-05
+location: "Houston, TX"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+- Tutored at **STaRT@Rice 2025** (Statistical Training and Research Techniques workshop).  
+- Led the session **“Visualizing Text Data: An Introduction in Python.”**  
+- Taught students how to use **Python for text analysis and visualization**.  
+- Introduced **computational text analysis methods and tools**.  
+- Guided participants through **hands-on coding exercises** to build practical skills.  
