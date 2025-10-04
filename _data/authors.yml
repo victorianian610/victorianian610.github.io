@@ -1,18 +1,11 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
+  name        : "Yuhan (Victoria) Nian"
   uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
+  email       : "vn23@rice.edu"
+  bio         : "Hi, this is Victoria! I'm currently senior student majoring in Statstcis and Asian Studies, also minor in Data Science at Rice University. My interests are rooted in imporving interpretability of machine learning by making better visualization to people who are new to data and generating more statistical results."
   avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+  github      : "victorianian610"
+  linkedin      : "www.linkedin.com/in/yuhannian"
 
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
