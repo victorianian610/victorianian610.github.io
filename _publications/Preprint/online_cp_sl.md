@@ -6,7 +6,7 @@ permalink: /publication/2025-superlearner-conformal
 excerpt: "This manuscript develops a Super Learner–based online conformal prediction framework that maintains valid coverage while improving efficiency through adaptive meta-learning."
 date: 2025-10-01
 venue: "Manuscript in preparation"
-paperurl: "/files/Trustworthy_Online_Conformal_Prediction.pdf"
+paperurl: "/files/Trustworthy_Online_Conformal_Prediction_by_Super_Learner_Ensembling.pdf"
 citation: "**Nian, Y.**, Liu, J., Li, M. (2025). <i>Trustworthy Online Conformal Prediction by Super Learner Ensembling</i>. Manuscript in preparation."
 ---
 
@@ -15,4 +15,4 @@ This manuscript introduces a **Super Learner–based online conformal prediction
 ---
 
 📄 **Read the full manuscript:**  
-[Download PDF](/files/Trustworthy_Online_Conformal_Prediction.pdf)
+[Download PDF](/files/Trustworthy_Online_Conformal_Prediction_by_Super_Learner_Ensembling.pdf)
