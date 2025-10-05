@@ -8,12 +8,12 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+site_theme               : "air" # Currently available options are "default", "air"
+title                    : "Yuhan (Victoria) Nian"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+name                     : &name "Yuhan (Victoria) Nian"
+description              : &description "Yuhan's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : https://yuhannian.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Yuhan (Victoria) Nian"
-  pronouns         : "She/Her"
+  pronouns         : "She/Her/Hers"
   bio              : "Hi, this is Victoria! I'm currently senior student majoring in Statstcis and Asian Studies, also minor in Data Science at Rice University. My interests are rooted in imporving interpretability of machine learning by making better visualization to people who are new to data and generating more statistical results."
   location         : "Houston, TX, USA"
   employer         : "Rice University"
