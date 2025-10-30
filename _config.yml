@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "air" # Currently available options are "default", "air"
-title                    : "Yuhan (Victoria) Nian"
+title                    : "Victoria's Homepage"
 title_separator          : "-"
 name                     : &name "Yuhan (Victoria) Nian"
 description              : &description "Yuhan's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
