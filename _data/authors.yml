@@ -2,9 +2,9 @@
 
 Name Name:
   name        : "Yuhan (Victoria) Nian"
-  uri         : "http://name.com"
+  uri         : "http://yuhannian.com"
   email       : "vn23@rice.edu"
-  bio         : "Hi, this is Victoria! I'm currently senior student majoring in Statstcis and Asian Studies, also minor in Data Science at Rice University. My interests are rooted in imporving interpretability of machine learning by making better visualization to people who are new to data and generating more statistical results."
+  bio         : "Hi, this is Victoria! I'm currently senior student majoring in Statstcis and Asian Studies, also minor in Data Science at Rice University. My research interests lie in uncertainty quantification, bayesian inference, trustworthy machine learning, and causal inference, with applications in biostatistics, computational social science, applied statistics, and natural language processing."
   avatar      : "bio-photo-2.jpg"
   github      : "victorianian610"
   linkedin      : "www.linkedin.com/in/yuhannian"
