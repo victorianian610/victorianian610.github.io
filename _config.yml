@@ -23,11 +23,9 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "IMG_5381.jpeg"
   name             : "Yuhan (Victoria) Nian"
   pronouns         : "She/Her/Hers"
-  bio              : "Hi, this is Victoria! I'm currently senior student majoring in Statstcis and Asian Studies, also minor in Data Science at Rice University. My interests are rooted in imporving interpretability of machine learning by making better visualization to people who are new to data and generating more statistical results."
-  location         : "Houston, TX, USA"
   employer         : "Rice University"
   uri              : # URL
   email            : "vn23@rice.edu" 
