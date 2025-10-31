@@ -1,24 +1,27 @@
 ---
 layout: archive
 title: "Curriculum Vitae"
-permalink: /cv-json/
+permalink: /CV/
 author_profile: false
-redirect_from:
-  - /resume-json
 ---
 
 {% include base_path %}
 
-<!-- CV Content -->
-{% include cv-template.html %}
+<div class="cv-container" style="text-align:center; margin-top:2rem;">
+  <h1 style="margin-bottom:1rem;">Yuhan (Victoria) Nian — Curriculum Vitae</h1>
 
-<!-- Download Section -->
-<div class="cv-download-section" style="text-align:center; margin-top: 2.5rem;">
-  <h3 style="margin-bottom: 1rem;">Download or View</h3>
-  <a href="{{ base_path }}/files/Yuhan_Nian_CV.pdf" class="btn btn--primary" style="margin-right: 10px;">
-    📄 Download CV (PDF)
-  </a>
-  <a href="{{ base_path }}/cv/" class="btn btn--inverse">
-    📝 View Full Markdown CV
-  </a>
+  <!-- Embedded PDF -->
+  <div class="cv-preview" style="margin: 0 auto; max-width: 850px; height: 1100px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <iframe
+      src="{{ base_path }}/files/Yuhan_Nian_CV.pdf"
+      width="100%"
+      height="100%"
+      style="border:none;">
+    </iframe>
+  </div>
+
+  <div style="margin-top:1.5rem;">
+    <a href="{{ base_path }}/files/Yuhan_Nian_CV.pdf" class="btn btn--primary" target="_blank">📄 Download CV (PDF)</a>
+    <a href="{{ base_path }}/cv-json/" class="btn btn--inverse">🧾 View JSON Version</a>
+  </div>
 </div>
