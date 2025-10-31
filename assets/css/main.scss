@@ -44,15 +44,18 @@
 
 /* Make avatar larger and circular */
 .author__avatar img {
-  border-radius: 50% !important; /* circular shape */
-  width: 300px !important;       /* larger size */
-  height: 300px !important;
-  object-fit: cover;             /* fill the circle neatly */
-  border: none !important;       /* remove gray border */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* soft shadow for depth */
+  width: 220px !important;        /* fixed equal width */
+  height: 220px !important;       /* fixed equal height */
+  aspect-ratio: 1 / 1;            /* force square proportions */
+  border-radius: 50% !important;  /* make it circular */
+  object-fit: cover;              /* crop to fill without distortion */
+  border: none !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+  display: block;
+  margin: 0 auto;                 /* center the image */
 }
 
-/* Center the avatar */
+/* Center avatar container */
 .author__avatar {
   text-align: center;
   margin-bottom: 1.5em;
