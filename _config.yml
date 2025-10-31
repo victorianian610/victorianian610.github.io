@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "IMG_5381.jpeg"
+  avatar           : "yuhan_avatar.png"
   name             : "Yuhan (Victoria) Nian"
   pronouns         : "She/Her/Hers"
   employer         : "Rice University"
