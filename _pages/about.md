@@ -13,7 +13,7 @@ My work bridges statistical theory, computation, and interdisciplinary research 
 
 ## Research Interests
 
-My research interests lie in **uncertainty quantification**, **Bayesian inference**, **trustworthy machine learning**, and **causal inference**, with applications in **biostatistics**, **computational social science**, **applied statistics**, and **natural language processing**.
+My research interests lie in **uncertainty quantification**, **bayesian inference**, **trustworthy machine learning**, and **causal inference**, with applications in **biostatistics**, **computational social science**, **applied statistics**, and **natural language processing**.
 
 
 ## Beyond Statistics
