@@ -44,16 +44,17 @@
 
 .author__avatar,
 .author__avatar img {
-  width: 180px;           /* increase this value to make avatar bigger */
-  height: 180px;          /* keep same as width to maintain square */
+  width: 180px;
+  height: 180px;
 }
 
 .author__avatar img {
   display: block;
-  object-fit: cover;      /* crop to fill while preserving aspect ratio */
+  object-fit: cover;
   object-position: center;
-  border-radius: 0;       /* 0 = square; use 8px for rounded, 50% for circle */
-border: none;
+  border-radius: 50%;     /* perfect circle */
+  border: none;           /* remove border completely */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* soft shadow */
 }
 
 /* Optional: responsive size for small screens */
