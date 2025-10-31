@@ -45,8 +45,8 @@
 /* Make avatar larger and circular */
 .author__avatar img {
   border-radius: 50% !important; /* circular shape */
-  width: 180px !important;       /* adjust size */
-  height: 180px !important;
+  width: 250px !important;       /* adjust size */
+  height: 250px !important;
   object-fit: cover;             /* fill the circle nicely */
   border: none !important;       /* remove gray border */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* subtle soft shadow */
