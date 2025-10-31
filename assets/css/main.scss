@@ -44,7 +44,20 @@
 
 /* Make avatar square instead of circular */
 .author__avatar img {
-  border-radius: 0 !important;
+  border-radius: 0 !important; /* square corners */
   box-shadow: none;
   border: 2px solid #ddd;
+
+  /* Increase size */
+  width: 180px !important;
+  height: 180px !important;
+
+  /* Optional: center it nicely */
+  object-fit: cover;
+}
+
+/* Optional: adjust container alignment */
+.author__avatar {
+  text-align: center;
+  margin-bottom: 1em;
 }
