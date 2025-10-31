@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Victoria's Homepage"
+title: "Yuhan(Victoria)Nian"
 author_profile: true
 redirect_from:
   - /about/
