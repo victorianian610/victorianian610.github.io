@@ -7,7 +7,11 @@ excerpt: "Presented at the American Sociological Association Annual Meeting — 
 date: 2025-08-12
 venue: "American Sociological Association Annual Meeting"
 location: "Chicago, IL"
-citation: "Abramson, C. M., Turner, K., Arteaga, I., Hernández de Jesús, A., Ginn, B., <b>Nian, Y.</b>, & Dohan, D. (2025). <i>Pragmatic sensemaking: Mapping the cultural work of living with dementia.</i> American Sociological Association Annual Meeting — Computational Approaches to Culture and Cognition (sponsored by the Section on Social Psychology), Chicago, IL."
+citation: >
+  Abramson, C. M., Turner, K., Arteaga, I., Hernández de Jesús, A., Ginn, B., <strong>Nian, Y.</strong>, & Dohan, D. (2025).
+  <em>Pragmatic Sensemaking: Mapping the Cultural Work of Living with Dementia.</em>
+  <em>American Sociological Association Annual Meeting — Computational Approaches to Culture and Cognition</em>
+  (sponsored by the Section on Social Psychology), Chicago, IL.
 ---
 
 This presentation explored how individuals living with dementia construct meaning and continuity in their everyday lives.  
