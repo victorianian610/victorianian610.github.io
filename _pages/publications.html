@@ -4,33 +4,47 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+publication_category:
+  - ["conference", { title: "Conference" }]
+  - ["under-review", { title: "Under Review" }]
+  - ["to-be-submitted", { title: "To Be Submitted" }]
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+<div class="wordwrap">
+  You can also find my articles on 
+  <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+</div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
+{% assign publication_category = site.publication_category | default: 
+  site.publication_category = 
+  (
+    {
+      "conference": {"title": "Conference"},
+      "under-review": {"title": "Under Review"},
+      "to-be-submitted": {"title": "To Be Submitted"}
+    }
+  ) 
+%}
+
+<!-- Render each publication category in the desired order -->
+{% assign categories_in_order = "conference,under-review,to-be-submitted" | split: "," %}
+
+{% for category_key in categories_in_order %}
+  {% assign category_info = site.publication_category[category_key] %}
+  {% assign title_shown = false %}
+
   {% for post in site.publications reversed %}
+    {% if post.category != category_key %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>{{ category_info.title }}</h2>
+      <hr />
+      {% assign title_shown = true %}
+    {% endunless %}
     {% include archive-single.html %}
   {% endfor %}
-{% endif %}
-
-
-
+{% endfor %}
