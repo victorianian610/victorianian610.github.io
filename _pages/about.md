@@ -1,13 +1,12 @@
 ---
 permalink: /
-title: "Yuhan(Victoria)Nian"
+title: "Welcome!"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-# Welcome!
 
 Hello! I’m **Yuhan (Victoria) Nian**, a senior at **Rice University**, pursuing a **B.S. in Statistics** (with a minor in Data Science) and a **B.A. in Asian Studies**.  
 My work bridges statistical theory, computation, and interdisciplinary research including both quantitative modeling and cultural inquiry.
