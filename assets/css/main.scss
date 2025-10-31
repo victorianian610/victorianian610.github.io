@@ -42,22 +42,18 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Make avatar square instead of circular */
+/* Make avatar larger and circular */
 .author__avatar img {
-  border-radius: 0 !important; /* square corners */
-  box-shadow: none;
-  border: 2px solid #ddd;
-
-  /* Increase size */
-  width: 180px !important;
+  border-radius: 50% !important; /* circular shape */
+  width: 180px !important;       /* adjust size */
   height: 180px !important;
-
-  /* Optional: center it nicely */
-  object-fit: cover;
+  object-fit: cover;             /* fill the circle nicely */
+  border: none !important;       /* remove gray border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* subtle soft shadow */
 }
 
-/* Optional: adjust container alignment */
+/* Center the avatar */
 .author__avatar {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
 }
