@@ -42,21 +42,21 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Keep original avatar dimensions, no cropping or framing */
+/* Make avatar square, nicely fitted, not cropped */
 .author__avatar img {
-  width: auto !important;          /* keep natural width */
-  height: auto !important;         /* keep natural height */
-  max-width: 220px;                /* optional: limit size to fit sidebar */
-  border-radius: 8px;              /* slightly rounded corners (set to 0 for square) */
-  border: none !important;         /* remove border */
-  box-shadow: none !important;     /* remove shadow */
-  object-fit: none !important;     /* don't crop or stretch */
+  width: 200px !important;        /* control size */
+  height: 200px !important;       /* keep equal for square */
+  object-fit: contain !important; /* fit entire photo, no cropping */
+  border-radius: 8px;             /* small rounded corners (optional) */
+  border: none !important;        /* remove border line */
+  box-shadow: none !important;    /* no shadow */
   display: block;
-  margin: 0 auto;                  /* center the image */
+  margin: 0 auto;                 /* center horizontally */
+  background-color: transparent;  /* no white or gray box */
 }
 
-/* Center avatar in the sidebar */
+/* Center avatar container */
 .author__avatar {
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
 }
