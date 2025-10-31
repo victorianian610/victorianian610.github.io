@@ -42,20 +42,22 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Make avatar larger and circular */
+/* Circular avatar that fits full image (no cropping) */
 .author__avatar img {
-  width: 220px !important;        /* fixed equal width */
-  height: 220px !important;       /* fixed equal height */
-  aspect-ratio: 1 / 1;            /* force square proportions */
+  width: 220px !important;        /* adjust as desired */
+  height: 220px !important;
+  aspect-ratio: 1 / 1;            /* keep perfect circle */
   border-radius: 50% !important;  /* make it circular */
-  object-fit: cover;              /* crop to fill without distortion */
-  border: none !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+  object-fit: contain !important; /* show full image, no cropping */
+  background-color: #f8f8f8;      /* subtle background behind image */
+  border: 2px solid #ddd;         /* optional light border */
+  padding: 4px;                   /* creates space between image and border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   display: block;
-  margin: 0 auto;                 /* center the image */
+  margin: 0 auto;
 }
 
-/* Center avatar container */
+/* Center the avatar */
 .author__avatar {
   text-align: center;
   margin-bottom: 1.5em;
