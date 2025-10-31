@@ -45,15 +45,15 @@
 /* Make avatar larger and circular */
 .author__avatar img {
   border-radius: 50% !important; /* circular shape */
-  width: 200px !important;       /* adjust size */
-  height: 200px !important;
-  object-fit: cover;             /* fill the circle nicely */
+  width: 220px !important;       /* larger size */
+  height: 220px !important;
+  object-fit: cover;             /* fill the circle neatly */
   border: none !important;       /* remove gray border */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* subtle soft shadow */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* soft shadow for depth */
 }
 
 /* Center the avatar */
 .author__avatar {
   text-align: center;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.5em;
 }
