@@ -7,7 +7,11 @@ excerpt: "Presented at ARS’25: Tenth International Workshop on Social Network 
 date: 2025-05-15
 venue: "ARS’25: Tenth International Workshop on Social Network Analysis — Networks in Culture, Culture in Networks"
 location: "Naples, Italy"
-citation: "Abramson, C. M., Turner, K., Arteaga, I., Hernández de Jesús, A., Ginn, B., <b>Nian, Y.</b>, & Dohan, D. (2025). <i>Pragmatic Sensemaking: Semantic Maps of Dementia Narratives.</i> ARS’25: Tenth International Workshop on Social Network Analysis — Networks in Culture, Culture in Networks. Naples, Italy."
+citation: >
+  Abramson, C. M., Turner, K., Arteaga, I., Hernández de Jesús, A., Ginn, B., <strong>Nian, Y.</strong>, & Dohan, D. (2025).
+  <em>Pragmatic Sensemaking: Semantic Maps of Dementia Narratives.</em>
+  <em>ARS’25: Tenth International Workshop on Social Network Analysis — Networks in Culture, Culture in Networks.</em>
+  Naples, Italy.
 ---
 
 This presentation introduced a computational framework for mapping cultural schemas in dementia narratives using semantic network analysis.  
