@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yuhan (Victoria) Nian"
+title: "Victoria's Homepage"
 author_profile: true
 redirect_from:
   - /about/
@@ -32,7 +32,7 @@ Outside of academics, I enjoy **photography**, **traveling**, and exploring new 
 
 ## Contact
 
-You can learn more about my research, teaching, and publications through the navigation links above, or reach me at  
+You can learn more about my **research**, **teaching**, and **publications** using the navigation links above, or reach me at:  
 📧 [vn23@rice.edu](mailto:vn23@rice.edu)
 
 ---
