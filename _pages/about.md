@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I’m Yuhan (Victoria) Nian, a senior at Rice University, pursuing a B.S. in Statistics (with a minor in Data Science) and B.A. in Asian Studies. You can find my upper-division coursework <a href="coursework.html"><u>here</u></a>.
+Hello! I’m Yuhan (Victoria) Nian, a senior at Rice University, pursuing a B.S. in Statistics (with a minor in Data Science) and B.A. in Asian Studies. You can find my upper-division coursework <a href="/coursework/"><u>here</u></a>.</a>
 
 ## Research Interests
 
