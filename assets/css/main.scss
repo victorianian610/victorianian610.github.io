@@ -75,3 +75,16 @@
 .home .page__content a:hover {
   color: #054da0 !important;
 }
+
+/* --- Make header/nav links black --- */
+.masthead__menu a,
+.greedy-nav a {
+  color: #000 !important;   /* make header links black */
+  text-decoration: none !important;
+}
+
+.masthead__menu a:hover,
+.greedy-nav a:hover {
+  color: #333 !important;   /* slightly darker hover */
+  text-decoration: underline;
+}
