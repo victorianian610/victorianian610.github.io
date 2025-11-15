@@ -66,25 +66,43 @@
   }
 }
 
-/* --- Limit blue links ONLY to homepage bio text --- */
-.home .page__content a {
-  color: #0969da !important;
+/* ----------------------------
+   Homepage blue links ONLY
+----------------------------- */
+/* Minimal Mistakes homepage layout uses .layout--home */
+.layout--home .page__content a {
+  color: #0969da !important;  /* blue */
   text-decoration: underline;
 }
 
-.home .page__content a:hover {
+.layout--home .page__content a:hover {
   color: #054da0 !important;
 }
 
-/* --- Make header/nav links black --- */
+/* ----------------------------
+   Header/nav links ALWAYS black
+----------------------------- */
 .masthead__menu a,
 .greedy-nav a {
-  color: #000 !important;   /* make header links black */
+  color: #000 !important;
   text-decoration: none !important;
 }
 
 .masthead__menu a:hover,
 .greedy-nav a:hover {
-  color: #333 !important;   /* slightly darker hover */
+  color: #333 !important;
   text-decoration: underline;
+}
+
+/* ----------------------------
+   Add spacing between sidebar and content
+----------------------------- */
+.layout--home .page__content {
+  padding-left: 40px !important;
+}
+
+@media (min-width: 1200px) {
+  .layout--home .page__content {
+    padding-left: 60px !important;
+  }
 }
