@@ -66,12 +66,12 @@
   }
 }
 
-a,
-a:visited {
-  color: #0969da !important;   /* GitHub link blue */
-  text-decoration: underline;  /* Make links visibly clickable */
+/* --- Limit blue links ONLY to homepage bio text --- */
+.home .page__content a {
+  color: #0969da !important;
+  text-decoration: underline;
 }
 
-a:hover {
-  color: #054da0 !important;   /* darker blue on hover */
+.home .page__content a:hover {
+  color: #054da0 !important;
 }
