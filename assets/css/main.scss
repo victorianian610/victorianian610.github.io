@@ -65,3 +65,13 @@
     height: 110px;
   }
 }
+
+a,
+a:visited {
+  color: #0969da !important;   /* GitHub link blue */
+  text-decoration: underline;  /* Make links visibly clickable */
+}
+
+a:hover {
+  color: #054da0 !important;   /* darker blue on hover */
+}
