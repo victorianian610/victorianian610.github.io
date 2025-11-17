@@ -3,7 +3,6 @@ title: "Pragmatic sensemaking: Mapping the cultural work of living with dementia
 collection: publications
 category: conference
 permalink: /publication/conference/2025-pragmatic-sensemaking
-excerpt: "Presented at the American Sociological Association Annual Meeting — Computational Approaches to Culture and Cognition (sponsored by the Section on Social Psychology)."
 date: 2025-08-12
 venue: "American Sociological Association Annual Meeting"
 location: "Chicago, IL"
