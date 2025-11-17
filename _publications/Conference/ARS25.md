@@ -2,6 +2,7 @@
 title: "Pragmatic sensemaking: Semantic maps of dementia narratives"
 collection: publications
 category: conference
+type: conference
 permalink: /publication/conference/2025-semantic-maps-dementia
 excerpt: "Presented at ARS’25: Tenth International Workshop on Social Network Analysis — Networks in Culture, Culture in Networks. Naples, Italy."
 date: 2025-05-15
