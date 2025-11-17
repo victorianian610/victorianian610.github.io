@@ -17,13 +17,7 @@
 
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
+        <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="">
       </div>
     {% endif %}
 
@@ -32,19 +26,38 @@
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
 
-    <!-- Metadata for Teaching + Publications -->
-    {% if post.collection == 'teaching' %}
+
+    <!-- ====================== -->
+    <!--     METADATA BLOCK     -->
+    <!-- ====================== -->
+
+    {% if post.collection == "teaching" %}
       <p>
         {{ post.type }},
-        <i>{{ post.venue }}</i>,
-        {{ post.terms | default: post.date | date: "%Y" }}
+        <i>{{ post.venue }}</i>
+        ({{ post.terms | default: post.date | date: "%Y" }})
       </p>
 
-    {% elsif post.collection == 'publications' %}
-      <p>
-        Published in <i>{{ post.venue }}</i>,
-        {{ post.date | default: "1900-01-01" | date: "%Y" }}
-      </p>
+    {% elsif post.collection == "publications" %}
+
+      {% if post.type == "conference" %}
+        <!-- Conference presentations -->
+        <p>
+          Presented at <i>{{ post.venue }}</i>.
+          {% if post.location %}{{ post.location }}.{% endif %}
+        </p>
+
+      {% elsif post.type == "preprint" or post.status == "To Be Submitted" %}
+        <!-- Preprints / working papers -->
+        <p><i>{{ post.venue }}</i> — Manuscript in preparation.</p>
+
+      {% else %}
+        <!-- Journal publications -->
+        <p>
+          Published in <i>{{ post.venue }}</i>,
+          {{ post.date | date: "%Y" }}
+        </p>
+      {% endif %}
 
     {% elsif post.date %}
       <p class="page__date">
@@ -55,28 +68,38 @@
       </p>
     {% endif %}
 
-    <!-- Summary / excerpt -->
+
+    <!-- ====================== -->
+    <!--        EXCERPT         -->
+    <!-- ====================== -->
     {% if post.excerpt %}
       <p class="archive__item-excerpt">{{ post.excerpt | markdownify }}</p>
     {% endif %}
 
-    <!-- Flexible citation + links -->
+
+    <!-- ====================== -->
+    <!--       CITATION         -->
+    <!-- ====================== -->
     {% if post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>
     {% endif %}
 
+
+    <!-- ====================== -->
+    <!--     PAPER / LINKS      -->
+    <!-- ====================== -->
     <p>
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}">PDF</a>
-    {% endif %}
-    {% if post.slidesurl %}
-      {% if post.paperurl %} | {% endif %}
-      <a href="{{ post.slidesurl }}">Slides</a>
-    {% endif %}
-    {% if post.bibtexurl %}
-      {% if post.paperurl or post.slidesurl %} | {% endif %}
-      <a href="{{ post.bibtexurl }}">BibTeX</a>
-    {% endif %}
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">PDF</a>
+      {% endif %}
+      {% if post.slidesurl %}
+        {% if post.paperurl %} | {% endif %}
+        <a href="{{ post.slidesurl }}">Slides</a>
+      {% endif %}
+      {% if post.bibtexurl %}
+        {% if post.paperurl or post.slidesurl %} | {% endif %}
+        <a href="{{ post.bibtexurl }}">BibTeX</a>
+      {% endif %}
     </p>
 
   </article>
