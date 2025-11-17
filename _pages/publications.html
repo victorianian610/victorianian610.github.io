@@ -1,9 +1,13 @@
 ---
-layout: default
-title: "Research"
-permalink: /research/
+layout: archive
+title: "Publications"
+permalink: /publications/
 author_profile: true
 ---
+publication_category:
+  - ["conference", { title: "Conference" }]
+  - ["under-review", { title: "Under Review" }]
+  - ["to-be-submitted", { title: "To Be Submitted" }]
 
 {% if site.author.googlescholar %}
 <div class="wordwrap">
@@ -14,24 +18,22 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Define category titles (fallback in case _config.yml not set) -->
-{% assign default_publication_category = 
-  '{"conference":{"title":"Conference"},
-    "under-review":{"title":"Under Review"},
-    "to-be-submitted":{"title":"To Be Submitted"}}' | parse_json 
+{% assign publication_category = site.publication_category | default: 
+  site.publication_category = 
+  (
+    {
+      "conference": {"title": "Conference"},
+      "under-review": {"title": "Under Review"},
+      "to-be-submitted": {"title": "To Be Submitted"}
+    }
+  ) 
 %}
-
-{% if site.publication_category %}
-  {% assign publication_category = site.publication_category %}
-{% else %}
-  {% assign publication_category = default_publication_category %}
-{% endif %}
 
 <!-- Render each publication category in the desired order -->
 {% assign categories_in_order = "conference,under-review,to-be-submitted" | split: "," %}
 
 {% for category_key in categories_in_order %}
-  {% assign category_info = publication_category[category_key] %}
+  {% assign category_info = site.publication_category[category_key] %}
   {% assign title_shown = false %}
 
   {% for post in site.publications reversed %}
