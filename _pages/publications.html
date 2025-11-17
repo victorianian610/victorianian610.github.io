@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
@@ -14,20 +14,13 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Define category titles (fallback in case _config.yml not set) -->
 {% assign default_publication_category = 
   '{"conference":{"title":"Conference"},
     "under-review":{"title":"Under Review"},
     "to-be-submitted":{"title":"To Be Submitted"}}' | parse_json 
 %}
 
-{% if site.publication_category %}
-  {% assign publication_category = site.publication_category %}
-{% else %}
-  {% assign publication_category = default_publication_category %}
-{% endif %}
-
-<!-- Render each publication category in the desired order -->
+{% assign publication_category = site.publication_category | default: default_publication_category %}
 {% assign categories_in_order = "conference,under-review,to-be-submitted" | split: "," %}
 
 {% for category_key in categories_in_order %}
@@ -35,14 +28,16 @@ author_profile: true
   {% assign title_shown = false %}
 
   {% for post in site.publications reversed %}
-    {% if post.category != category_key %}
+    {% unless post.category == category_key or post.categories contains category_key %}
       {% continue %}
-    {% endif %}
+    {% endunless %}
+
     {% unless title_shown %}
       <h2>{{ category_info.title }}</h2>
       <hr />
       {% assign title_shown = true %}
     {% endunless %}
+
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
