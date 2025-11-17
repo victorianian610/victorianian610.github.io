@@ -35,7 +35,7 @@ author_profile: true
   {% assign title_shown = false %}
 
   {% for post in site.publications reversed %}
-    {% if post.category != category_key %}
+    {% if post.category != category_key and post.categories contains category_key == false %}
       {% continue %}
     {% endif %}
     {% unless title_shown %}
