@@ -4,7 +4,6 @@ collection: publications
 category: conference
 type: conference
 permalink: /publication/conference/2025-semantic-maps-dementia
-excerpt: "Presented at ARS’25: Tenth International Workshop on Social Network Analysis — Networks in Culture, Culture in Networks. Naples, Italy."
 date: 2025-05-15
 venue: "ARS’25: Tenth International Workshop on Social Network Analysis — Networks in Culture, Culture in Networks"
 location: "Naples, Italy"
@@ -16,7 +15,6 @@ citation: >
 ---
 
 This presentation introduced a computational framework for mapping cultural schemas in dementia narratives using semantic network analysis.  
-We combined qualitative coding with text embedding–based similarity mapping to visualize how individuals and caregivers construct meaning through discourse.  
-The study demonstrates how sociocultural structures shape experiences of illness and caregiving, revealing both common and divergent sensemaking patterns across interview contexts.
+We combined qualitative coding with text embedding–based similarity mapping to visualize how individuals and caregivers construct meaning through discourse. The study demonstrates how sociocultural structures shape experiences of illness and caregiving, revealing both common and divergent sensemaking patterns across interview contexts.
 
 ---
