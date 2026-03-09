@@ -39,20 +39,23 @@
       </p>
 
     {% elsif post.collection == "publications" %}
-
+    
       {% if post.type == "conference" %}
-        <!-- Conference presentations -->
         <p>
           Presented at <i>{{ post.venue }}</i>.
           {% if post.location %}{{ post.location }}.{% endif %}
         </p>
-
+    
+      {% elsif post.status == "Under Review" or post.category == "under-review" %}
+        <p>
+          Under review by <i>{{ post.venue }}</i>.
+          {% if post.date %}({{ post.date | date: "%Y" }}){% endif %}
+        </p>
+    
       {% elsif post.type == "preprint" or post.status == "To Be Submitted" %}
-        <!-- Preprints / working papers -->
         <p><i>{{ post.venue }}</i> — Manuscript in preparation.</p>
-
+    
       {% else %}
-        <!-- Journal publications -->
         <p>
           Published in <i>{{ post.venue }}</i>,
           {{ post.date | date: "%Y" }}
