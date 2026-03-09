@@ -18,6 +18,3 @@ This manuscript introduces a **Super Learner–based online conformal prediction
 It is part of ongoing research integrating ensemble learning and conformal prediction for time series forecasting.
 
 ---
-
-📄 **Read the full manuscript:**  
-[Preview PDF](/files/Trustworthy_Online_Conformal_Prediction_by_Super_Learner_Ensembling.pdf)
